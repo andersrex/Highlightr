@@ -52,7 +52,7 @@ open class Theme {
     init(themeString: String)
     {
         theme = themeString
-        setCodeFont(RPFont(name: "Menlo", size: 14)!)
+        setCodeFont(RPFont(name: "Menlo", size: 13)!)
         strippedTheme = stripTheme(themeString)
         lightTheme = strippedThemeToString(strippedTheme)
         themeDict = strippedThemeToTheme(strippedTheme)
