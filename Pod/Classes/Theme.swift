@@ -52,11 +52,7 @@ open class Theme {
     init(themeString: String)
     {
         theme = themeString
-        // setCodeFont(RPFont(name: "Courier", size: 14)!)
-	let fontManager = NSFontManager.shared
-	let monospacedFont = fontManager.convert(RPFont.systemFont(ofSize: 14), toHaveTrait: .fixedPitchFontMask)
-        setCodeFont(monospacedFont)
-
+        setCodeFont(RPFont(name: "Menlo", size: 14)!)
         strippedTheme = stripTheme(themeString)
         lightTheme = strippedThemeToString(strippedTheme)
         themeDict = strippedThemeToTheme(strippedTheme)
