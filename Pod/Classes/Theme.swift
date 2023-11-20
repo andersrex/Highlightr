@@ -52,7 +52,8 @@ open class Theme {
     init(themeString: String)
     {
         theme = themeString
-        setCodeFont(RPFont(name: "Courier", size: 14)!)
+        // setCodeFont(RPFont(name: "Courier", size: 14)!)
+        setCodeFont(RPFont.monospacedSystemFont(ofSize: 14, weight: .regular))	    
         strippedTheme = stripTheme(themeString)
         lightTheme = strippedThemeToString(strippedTheme)
         themeDict = strippedThemeToTheme(strippedTheme)
